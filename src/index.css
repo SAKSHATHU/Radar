@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Light theme by default; dark theme follows the OS setting. */
+:root {
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #6b6a65;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --hover: #f0efec;
+  --series-1: #2a78d6;
+  --series-1-soft: #cde2fb66;
+  color-scheme: light;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #ffffff;
+    --ink-2: #c3c2b7;
+    --muted: #9a998f;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --hover: #262624;
+    --series-1: #3987e5;
+    --series-1-soft: #184f9566;
+    color-scheme: dark;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+}
